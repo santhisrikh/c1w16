@@ -5,7 +5,11 @@ const CartButton = () => {
   return <>
   {/* add to cart button */}
   {/* count with - and  + button */}
-  {/* count element should have count-item as className */}
+  <div>
+      <button>-</button>
+      <p className="count-item">{count}</p>
+      <button>+</button>
+  </div>
   </>;
 };
 export default CartButton
