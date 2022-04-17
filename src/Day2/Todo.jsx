@@ -77,7 +77,7 @@ export const Todo = () => {
           </tbody>
         </table>
       ) : (
-        <h1>No tasks currenlty</h1>
+        <h1>no Tasks Found</h1>
       )}
     </>
   );
