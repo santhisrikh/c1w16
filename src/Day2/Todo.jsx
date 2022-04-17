@@ -1,5 +1,4 @@
-import React, { useState, useId } from "react";
-import { nanoid } from "nanoid";
+import React, { useState } from "react";
 import TodoItem from "./TodoItem";
 export const Todo = () => {
   const [task, setTask] = useState("");
@@ -29,7 +28,7 @@ export const Todo = () => {
     setTodo([newTask, ...todo]);
   };
   const handleDelete = (id) => {
-    const newTodo = todo.filter((item) => item.id != id);
+    const newTodo = todo.filter((item) => item.id !== id);
     setTodo(newTodo);
   };
   console.log(todo, "todo");
@@ -71,7 +70,7 @@ export const Todo = () => {
                   item={item}
                   handleDelete={handleDelete}
                 //   key={item.id}
-                  isHidden = {index%2==0}
+                  isHidden = {index%2===0}
                 />
               );
             })}
